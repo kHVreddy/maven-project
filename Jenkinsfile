@@ -7,5 +7,12 @@ pipeline {
       }
     }
 
+    stage('BUILD') {
+      steps {
+        sh '''/usr/share/maven/bin/mvn clean package
+'''
+      }
+    }
+
   }
 }
